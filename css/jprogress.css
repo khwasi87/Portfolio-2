@@ -3,6 +3,7 @@
   border: 3px solid #EAEAEA;
   border-radius: 3px;
   margin-bottom: 5px;
+  position: relative;
 }
 
 .progress_single {
