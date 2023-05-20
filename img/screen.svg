@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <g id="Group_22" data-name="Group 22" transform="translate(-1215 -762)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1215 762)" fill="#fff" stroke="#20292b" stroke-width="5">
+      <circle cx="37" cy="37" r="37" stroke="none"/>
+      <circle cx="37" cy="37" r="34.5" fill="none"/>
+    </g>
+    <path id="Icon_awesome-laptop" data-name="Icon awesome-laptop" d="M43.875,29.25H26.827a2.217,2.217,0,0,1-2.3,2.25H20.25a2.388,2.388,0,0,1-2.3-2.25H1.125A1.128,1.128,0,0,0,0,30.375V31.5A4.513,4.513,0,0,0,4.5,36h36A4.513,4.513,0,0,0,45,31.5V30.375A1.128,1.128,0,0,0,43.875,29.25ZM40.5,3.375A3.385,3.385,0,0,0,37.125,0H7.875A3.385,3.385,0,0,0,4.5,3.375V27h36ZM36,22.5H9V4.5H36Z" transform="translate(1229.5 781)" fill="#20292b"/>
+  </g>
+</svg>

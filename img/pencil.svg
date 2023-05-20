@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <g id="Group_2" data-name="Group 2" transform="translate(-309 -802)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(309 802)" fill="#fff" stroke="#20292b" stroke-width="5">
+      <circle cx="37" cy="37" r="37" stroke="none"/>
+      <circle cx="37" cy="37" r="34.5" fill="none"/>
+    </g>
+    <path id="Icon_awesome-pencil-alt" data-name="Icon awesome-pencil-alt" d="M34.985,9.983l-3.239,3.239a.844.844,0,0,1-1.195,0l-7.8-7.8a.844.844,0,0,1,0-1.195L25.991.989a3.38,3.38,0,0,1,4.771,0l4.223,4.223A3.367,3.367,0,0,1,34.985,9.983ZM19.969,7.011,1.517,25.462.028,34a1.688,1.688,0,0,0,1.953,1.953l8.537-1.5L28.97,16a.844.844,0,0,0,0-1.195l-7.8-7.8a.852.852,0,0,0-1.2,0ZM8.719,23.882a.98.98,0,0,1,0-1.391L19.54,11.669a.984.984,0,1,1,1.391,1.391L10.111,23.882a.98.98,0,0,1-1.391,0ZM6.183,29.791H9.556v2.551l-4.532.794L2.838,30.95l.794-4.532H6.183Z" transform="translate(328.012 821.509)" fill="#20292b"/>
+  </g>
+</svg>

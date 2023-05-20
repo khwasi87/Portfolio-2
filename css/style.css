@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+h3,p{
+    margin: 0;
+}
+
+:root{
+    --bgmain:#C2F4FF;
+    --border: #20292B;
+    --textblack:#20292B;
+    --white:#ffff;
+    --inactive:#ececec;
+    --menu:#BAF8D7;
+    --yellow:#f1ff6e;
+    --intro:#FFE3CE;
+}
+
+body{
+    background-color: var(--bgmain);
+}
+
+.mycontainer1{
+    max-width: 1440px;
+    width: 100%;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.mycontainer2{
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+nav{
+    margin: 0 auto;
+    background-color: var(--white);
+    border: 4px solid var(--border);
+}
+
+nav ul li{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li:hover{
+    background-color: var(--textblack);
+}
+
+.nav-link{
+    padding: 0 1rem;
+}
+
+nav ul li a{ 
+    color: var(--textblack)!important;
+}
+nav ul li a:hover{ 
+    color: var(--white)!important;
+}
+
+.navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    margin-right: 0;
+    font-weight:800;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+    border-right:4px solid var(--border) ;
+}
+
+.linkin{
+
+}
+
+.menu1{
+    background-color:var(--menu);
+    border-right:4px solid var(--border);
+}
+
+.intro{
+    background-color: var(--intro);
+    border:4px solid var(--border);
+    border-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px
+}
+
+.content-intro h3{
+    font-weight: 500;
+    max-width: 768px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-pic{
+    border: 3px solid var(--border);
+    max-width: 240px;
+    width: 100%;
+    padding: 10px;
+}
+
+.profile-image{
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation{
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+button#download{
+    background-color: var(--textblack);
+    color: var(--white);
+    padding: 14px 50px 14px 20px;
+    border: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+button#download::after{
+    display: inline-flex;
+    content: '';
+    background-image: url('../img/Icon-feather-download.svg');
+    background-size: 20px 20px;
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.about{
+    background-color: var(--white);
+    text-align: center;
+    padding:50px 70px ;
+    border:4px solid var(--border);
+    border-top: 0;
+    border-bottom: 0;
+}
+.about-content h3{
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-cards{
+    margin-top: 60px;
+}
+
+/*------cards1 css------*/
+
+.about-cards .card{
+    position: relative;
+    border: 3px solid var(--textblack);
+    border-radius: 0;
+    min-height: 400px;
+    height: 100%;
+    text-align: left;
+}
+
+.about-cards .mid{
+    border-left: none;
+    border-right: none;
+}
+
+
+.about-cards .card img{
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    max-width: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.about-cards .card-body{
+    margin-top: 50px;
+}
+
+.about-cards .card-title{
+    margin: 20px 0;
+}
+
+/*----cards1 ends-----*/
+
+/*-----skills---*/
+
+.section-title{
+    background-color: var(--border);
+    text-align: center;
+    padding: 10px 0;
+    color: var(--white);
+}
+
+.skills{
+    background-color: var(--intro);
+    color: var(--textblack);
+    padding: 50px 0;
+    border: 4px solid var(--border);
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.ui-tabs{
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ui-tabs .ui-tabs-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.2em 0.2em 0;
+}
+
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {
+    background: var(--border);
+    font-weight: 500;
+}
+
+
+.ui-tabs .ui-tabs-nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    margin: 0 10px;
+    background-color: transparent;
+    border: 3px solid var(--border);
+    border-radius: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.ui-widget-header {
+    border: 0;
+    background:transparent;
+    color: #333333;
+    font-weight: bold;
+}
+
+.ui-widget-content {
+    border: 0;
+    background: transparent;
+    color: #333333;
+}
+
+.ui-widget.ui-widget-content {
+    border: 0;
+}
+
+/*---accordion---*/
+
+.ui-accordion-header.ui-state-active{
+    background-color: var(--bgmain)!important;
+    border: 3px solid var(--border);
+    color: var(--textblack);
+    border-radius: 0;
+    outline: none;
+    font-weight: 600;
+}
+
+#accordion .ui-accordion-header{
+    background-color: var(--inactive);
+    border-radius: 0;
+}
+
+.ui-icon-circle-arrow-s {
+    background-position: 1px 1px;
+}
+
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    background-image: url(https://code.jquery.com/ui/1.13.2/themes/base/images/ui-icons_444444_256x240.png);
+}
+
+
+.ui-accordion .ui-accordion-header .ui-icon 
+{ 
+    position: absolute; 
+    left: 100%; 
+    margin-left: -30px; 
+    top: 50%; 
+    margin-top: -8px; 
+    width: 16px;
+    height: 16px;
+}
+
+.ui-icon-circle-arrow-e {
+    background-position: -64px 1px;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 1em 1em;
+    border-top: 0;
+    overflow: auto;
+}
+
+/*--accodion card--*/
+
+.tools-accordion .card-img-top{
+    max-width: 60px;
+    width: 100%;
+    margin:10px 10px;
+}
+
+.tools-accordion .card-body {
+    flex: 1 1 auto;
+    padding: 0.5rem 0.5rem;
+}
+.tools-accordion tbody td {
+    font-size: 0.8em;
+}
