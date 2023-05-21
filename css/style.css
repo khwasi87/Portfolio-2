@@ -35,7 +35,7 @@ body{
     padding-right: 16px;
 }
 
-.mycontainer2{
+.mycontainer{
     max-width: 1440px;
     width: 100%;
     margin-left: auto;
@@ -104,6 +104,7 @@ nav ul li a:hover{
     background-color: var(--intro);
     border:4px solid var(--border);
     border-top: 0px;
+    border-bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,7 +166,7 @@ button#download::after{
 .about{
     background-color: var(--white);
     text-align: center;
-    padding:50px 70px ;
+    padding:30px 70px ;
     border:4px solid var(--border);
     border-top: 0;
     border-bottom: 0;
@@ -228,7 +229,7 @@ button#download::after{
 .skills{
     background-color: var(--intro);
     color: var(--textblack);
-    padding: 50px 0;
+    padding: 30px 0;
     border: 4px solid var(--border);
     border-bottom: 0;
     border-top: 0;
