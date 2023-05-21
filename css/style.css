@@ -344,3 +344,33 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .tools-accordion tbody td {
     font-size: 0.8em;
 }
+
+/*---progress bar---*/
+
+.progress_single_wrapper {
+    background-color: var(--inactive);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  .progress_single {
+    width: 0;
+    color: white;
+    font-family: inherit;
+    padding: 10px 0;
+    margin-top: 4px;
+  }
+
+  span.text {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    color: var(--textblack);
+}
+
+#tabs-1 ul li p{
+    font-weight: 600;
+    font-size: 14px;
+}
