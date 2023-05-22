@@ -351,7 +351,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .progress_single_wrapper {
     background-color: var(--inactive);
     border-radius: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative;
     font-weight: 500;
   }
