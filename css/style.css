@@ -376,3 +376,23 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     font-weight: 600;
     font-size: 14px;
 }
+
+/*---- journey ----*/
+
+.journey{
+    background-color: var(--menu);
+    border: 4px solid var(--border);
+    border-bottom: 0;
+    border-top: 0;
+    padding: 30px 90px;
+}
+
+.journey .card{
+    max-width: 536px;
+    width: 100%;
+    border: 3px solid var(--border);
+    border-radius: 0;
+    background-color: var(--intro);
+    box-shadow: -12px 12px 0px var(--border);
+    padding: 16px;
+}
