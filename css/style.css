@@ -19,11 +19,35 @@ h3,p{
     --menu:#BAF8D7;
     --yellow:#f1ff6e;
     --intro:#FFE3CE;
+    --text-muted:#6c757d;
 }
 
 body{
     background-color: var(--bgmain);
 }
+
+/*--- ScrollFade Specific ---*/
+
+.scrollFade {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.scrollFade--hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.scrollFade--visible {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.scrollFade--animate {
+	transition: opacity 0.4s ease-in-out;
+}
+
+/*------*/
 
 
 .mycontainer1{
@@ -385,6 +409,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     border-bottom: 0;
     border-top: 0;
     padding: 30px 90px;
+    position: relative;
 }
 
 .journey .card{
@@ -395,4 +420,38 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     background-color: var(--intro);
     box-shadow: -12px 12px 0px var(--border);
     padding: 16px;
+}
+
+.journey .card-body h6{
+    font-weight: 600;
+    color: var(--textblack)!important;
+}
+
+.date{
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.comptab{
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+}
+
+.footleft{
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footright{
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
 }
