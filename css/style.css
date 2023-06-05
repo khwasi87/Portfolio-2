@@ -17,7 +17,7 @@ h3,p{
     --white:#ffff;
     --inactive:#ececec;
     --menu:#BAF8D7;
-    --yellow:#f1ff6e;
+    --yellow:#f4f078;
     --intro:#FFE3CE;
     --text-muted:#6c757d;
 }
@@ -188,6 +188,13 @@ button#download::after{
     height: 20px;
 }
 
+.section-title{
+    background-color: var(--border);
+    text-align: center;
+    padding: 10px 0;
+    color: var(--white);
+}
+
 .about{
     background-color: var(--white);
     text-align: center;
@@ -243,13 +250,6 @@ button#download::after{
 /*----cards1 ends-----*/
 
 /*-----skills---*/
-
-.section-title{
-    background-color: var(--border);
-    text-align: center;
-    padding: 10px 0;
-    color: var(--white);
-}
 
 .skills{
     background-color: var(--intro);
@@ -404,7 +404,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 /*---- journey ----*/
 
 .journey{
-    background-color: var(--menu);
+    background-color: var(--yellow);
     border: 4px solid var(--border);
     border-bottom: 0;
     border-top: 0;
@@ -444,14 +444,32 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 
 .footleft{
     position: absolute;
-    left: 60px;
+    left: 10%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .footright{
     position: absolute;
-    right: 60px;
+    right: 16%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/*---- projects ----*/
+
+.projects{
+    background-color: var(--menu);
+    border: 4px solid var(--border);
+    border-top: 0;
+    border-bottom: 0;
+    padding: 30px 60px;
+}
+
+/*------- owl carousel ----------*/
+
+.owl-carousel .item{
+    background-color: var(--border);
+    padding: 30px 10px;
+    color: var(--white);
 }

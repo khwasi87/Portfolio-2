@@ -1,5 +1,5 @@
 $( function() {
-    $( "#tabs1" ).tabs();
+    $( "#tabs1,#tabs2" ).tabs();
 } );
 
 $( function() {
@@ -13,6 +13,8 @@ $( function() {
         icons: icons
     });
   } );
+
+  /*---------- scrool fade ---------------*/
 
   var fadeElements = document.getElementsByClassName('scrollFade');
 
@@ -48,3 +50,26 @@ window.addEventListener('resize', scrollFade);
 document.addEventListener('DOMContentLoaded', function() {
     scrollFade();
 });
+
+/*---------- owl carousel --------------*/
+
+$(document).ready(function() {
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+	  stagePadding: 75,
+	  margin: 10,
+	  nav: true,
+	  loop: true,
+	  responsive: {
+		0: {
+		  items: 1
+		},
+		600: {
+		  items: 1
+		},
+		1000: {
+		  items: 1
+		}
+	  }
+	})
+  })
