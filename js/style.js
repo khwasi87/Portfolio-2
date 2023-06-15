@@ -56,11 +56,16 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function() {
 	var owl = $('.owl-carousel');
 	owl.owlCarousel({
-	  stagePadding: 75,
-	  margin: 10,
-	  nav: true,
-	  loop: true,
-	  responsive: {
+	  	stagePadding: 75,
+	 	margin: 15,
+		autoplay:true,
+		autoplayTimeout:5000,
+		autoplayHoverPause:true,
+	  	nav: true,
+	  	loop: true,
+	  	dots:true,
+		navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+	 	 responsive: {
 		0: {
 		  items: 1
 		},
