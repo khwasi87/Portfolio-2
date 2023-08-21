@@ -116,10 +116,6 @@ nav ul li a:hover{
     border-right:4px solid var(--border) ;
 }
 
-.linkin{
-
-}
-
 .menu1{
     background-color:var(--menu);
     border-right:4px solid var(--border);
@@ -419,7 +415,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     border-radius: 0;
     background-color: var(--intro);
     box-shadow: -12px 12px 0px var(--border);
-    padding: 16px;
+    padding: 10px;
 }
 
 .journey .card-body h6{
