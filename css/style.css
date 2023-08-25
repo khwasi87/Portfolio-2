@@ -538,3 +538,49 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     transition: opacity .2s ease;
     border-radius: 30px;
 }
+
+/*========== projects =============*/
+
+.pro-crd-img{
+    max-width: 500px;
+    padding: 32px 32px 0 32px;
+}
+
+.pro-crd-img img{
+     width: 100%;
+     height: auto;
+     border: 3px solid var(--border);
+}
+
+.crd-blue{
+    background-color: var(--bgmain);
+}
+
+.crd-main{
+    background-color: var(--intro);
+}
+
+.projects .card{
+    box-shadow: -12px 12px 0px var(--border);
+    border-radius: 0;  
+}
+
+.projects .card .card-body{
+    padding: 32px;
+    position: relative;
+}
+
+.projects .card .card-body .card-text{
+    margin-top: 32px;
+}
+
+.projects .card .card-body .card-title::after{
+    content: '';
+    position: absolute;
+    top: 34%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    margin: 10px auto;
+    border: 1px solid var(--border);
+}
