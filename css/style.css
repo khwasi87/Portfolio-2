@@ -452,7 +452,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     transform: translateY(-50%);
 }
 
-/*---- projects ----*/
+/*=========== projects ============*/
 
 .projects{
     background-color: var(--menu);
@@ -493,8 +493,8 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     width: 16px;
     height: 100px;
     position: absolute;
-    bottom: -6px;
-    left: 35%;
+    top: -54px;
+    right: 5%;
     display: block !important;
     border: 0px solid black;
 }
@@ -510,8 +510,8 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     width: 16px;
     height: 100px;
     position: absolute;
-    bottom: -6px;
-    right: 35%;
+    top: -54px;
+    right: 0;
     display: block !important;
     border: 0px solid black;
 }
@@ -538,8 +538,6 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     transition: opacity .2s ease;
     border-radius: 30px;
 }
-
-/*========== projects =============*/
 
 .pro-crd-img{
     max-width: 500px;
@@ -583,4 +581,33 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     width: 100%;
     margin: 10px auto;
     border: 1px solid var(--border);
+}
+
+
+.modslider .owl-prev {
+    width: 16px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: block !important;
+    border: 0px solid black;
+}
+
+.modslider .owl-next {
+    width: 16px;
+    height: 100px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    display: block !important;
+    border: 0px solid black;
+}
+
+.modslider .owl-carousel .item{
+    background-color: transparent;
+    padding: 10px;
+    color: var(--white);
 }
