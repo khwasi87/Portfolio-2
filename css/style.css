@@ -566,6 +566,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .projects .card .card-body{
     padding: 32px;
     position: relative;
+    min-height: 20em;
 }
 
 .projects .card .card-body .card-text{
@@ -575,7 +576,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .projects .card .card-body .card-title::after{
     content: '';
     position: absolute;
-    top: 34%;
+    top: 20%;
     left: 0;
     height: 1px;
     width: 100%;

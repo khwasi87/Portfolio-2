@@ -25,7 +25,7 @@ function scrollFade() {
 		var element = fadeElements[index];
 		var rect = element.getBoundingClientRect();
 
-		var elementFourth = rect.height/4;
+		var elementFourth = rect.height/10;
 		var fadeInPoint = window.innerHeight - elementFourth;
 		var fadeOutPoint = -(rect.height/1);
 
@@ -79,7 +79,8 @@ $(document).ready(function() {
 	})
   })
 
-  $('#mod').owlCarousel({
+  
+  $('#mod2').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -97,3 +98,25 @@ $(document).ready(function() {
         }
     }
 })
+
+
+$("#mod, #mod2, #mod3, #mod4, #mod5, #mod6").each(function() {
+	$(this).owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		dots:true,
+		navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:1
+			},
+			1000:{
+				items:1
+			}
+		}
+	});
+});
