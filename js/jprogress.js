@@ -4,7 +4,7 @@
         
         // settings
         var settings = $.extend({
-            animateTime: 3000,
+            animateTime: 5000,
             background: '#01A982'
         }, options);
         
