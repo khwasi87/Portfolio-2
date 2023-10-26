@@ -12,14 +12,14 @@ h3,p{
 
 :root{
     --bgmain:#C2F4FF;
-    --border: #20292B;
-    --textblack:#20292B;
+    --border: #474747;
+    --textblack:#444444;
     --white:#ffff;
     --inactive:#ececec;
     --menu:#BAF8D7;
     --yellow:#f4f078;
     --intro:#FFE3CE;
-    --text-muted:#6c757d;
+    --text-muted:#6F6F6F;
 }
 
 body{
@@ -199,10 +199,10 @@ button#download::after{
     border-top: 0;
     border-bottom: 0;
 }
-.about-content h3{
-    font-weight: 500;
+.about-content p{
+    font-weight: 600;
     width: 100%;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 .about-cards{
@@ -454,6 +454,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 
 /*=========== projects ============*/
 
+
 .projects{
     background-color: var(--menu);
     border: 4px solid var(--border);
@@ -611,4 +612,17 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     background-color: transparent;
     padding: 10px;
     color: var(--white);
+}
+
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: unset;
+    font-size: 16px;
+}
+.modal-footer ul li{
+    font-weight: 600;
+    margin-bottom: 10px;
 }
