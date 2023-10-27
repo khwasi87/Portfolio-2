@@ -14,6 +14,7 @@ $( function() {
     });
   } );
 
+
   /*---------- scrool fade ---------------*/
 
   var fadeElements = document.getElementsByClassName('scrollFade');
@@ -27,7 +28,7 @@ function scrollFade() {
 
 		var elementFourth = rect.height/10;
 		var fadeInPoint = window.innerHeight - elementFourth;
-		var fadeOutPoint = -(rect.height/1);
+		var fadeOutPoint = -(rect.height/0);
 
 		if (rect.top <= fadeInPoint) {
 			element.classList.add('scrollFade--visible');
@@ -80,24 +81,24 @@ $(document).ready(function() {
   })
 
   
-  $('#mod2').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-	dots:true,
-	navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+//   $('#mod2').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+// 	dots:true,
+// 	navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:1
+//         },
+//         1000:{
+//             items:1
+//         }
+//     }
+// })
 
 
 $("#mod, #mod2, #mod3, #mod4, #mod5, #mod6, #mod7, #mod8, #mod9").each(function() {
@@ -120,3 +121,24 @@ $("#mod, #mod2, #mod3, #mod4, #mod5, #mod6, #mod7, #mod8, #mod9").each(function(
 		}
 	});
 });
+
+/*============== exp year calculation =============*/
+
+var dob = $('#date').val();
+if(dob != ''){
+	var str=dob.split('-');    
+	var firstdate=new Date(str[0],str[1],str[2]);
+	var today = new Date();        
+	var dayDiff = Math.ceil(today.getTime() - firstdate.getTime()) / (1000 * 60 * 60 * 24 * 365);
+	var age = parseInt(dayDiff);
+	$('#age').html(age);
+}
+var dob = $('#date1').val();
+if(dob != ''){
+	var str=dob.split('-');    
+	var firstdate=new Date(str[0],str[1],str[2]);
+	var today = new Date();        
+	var dayDiff = Math.ceil(today.getTime() - firstdate.getTime()) / (1000 * 60 * 60 * 24 * 365);
+	var age = parseInt(dayDiff);
+	$('#age1').html(age+' Years - of experience');
+}
