@@ -49,15 +49,26 @@ body{
 
 /*------*/
 
+.topblock{
+    width: 100%;
+    min-height: 40px;
+    background-color: transparent;
+}
 
 .mycontainer1{
     max-width: 1440px;
     width: 100%;
-    margin-top:50px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .mycontainer{
@@ -148,7 +159,6 @@ nav ul li a:hover{
 }
 
 .profile-image{
-    max-width: 240px;
     width: 100%;
     height: auto;
     animation: rotation 60s infinite linear;
@@ -189,33 +199,79 @@ button#download::after{
     text-align: center;
     padding: 10px 0;
     color: var(--white);
+    z-index: 1;
 }
 
+/*=========== about me===========*/
 .about{
     background-color: var(--white);
-    text-align: center;
-    padding:30px 70px ;
+    text-align: left;
+    padding:30px 60px ;
     border:4px solid var(--border);
     border-top: 0;
     border-bottom: 0;
+}   
+
+.mobile{
+    display: none;
+}
+.about-content aside:first-child{
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    column-gap: 20px;
 }
 .about-content p{
     font-weight: 600;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: var(--textblack);
+    margin-bottom: 14px;
 }
+.about-content span{
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--textblack);
+}
+
+.about-content button{
+    background-color: transparent;
+    border: transparent;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--textblack);
+    
+}
+
+.about-content input[type=date] {
+    background-color: var(--bgmain);
+    border: 3px solid var(--border);
+    text-align: center;
+    max-width: 130px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--textblack);
+    margin: 0 6px;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+/*------cards1 css------*/
 
 .about-cards{
     margin-top: 60px;
 }
 
-/*------cards1 css------*/
-
 .about-cards .card{
-    position: relative;
     border: 3px solid var(--textblack);
     border-radius: 0;
-    min-height: 400px;
+    min-height: 350px;
     height: 100%;
     text-align: left;
 }
@@ -236,7 +292,7 @@ button#download::after{
 }
 
 .about-cards .card-body{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .about-cards .card-title{
@@ -244,6 +300,8 @@ button#download::after{
 }
 
 /*----cards1 ends-----*/
+
+/*=========== about me===========*/
 
 /*-----skills---*/
 
@@ -265,7 +323,7 @@ button#download::after{
 .ui-tabs .ui-tabs-nav {
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0.2em 0.2em 0;
 }
 
@@ -385,7 +443,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     margin-top: 4px;
   }
 
-  span.text {
+  .skills span.text {
     position: absolute;
     top: 0;
     right: -50px;
@@ -625,4 +683,40 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .modal-footer ul li{
     font-weight: 500;
     margin-bottom: 10px;
+}
+
+/*======== contact ===========*/
+
+.contact{
+    background-color: var(--intro);
+    border: 4px solid var(--border);
+    border-top: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 90px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+.contact div a{
+    color: var(--textblack);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.contact div{
+    padding: 12px 16px;
+    border: 4px solid var(--border);
+}
+.contact div h4{
+    margin: 12px 0;
+    font-weight: 600;
+}
+.contact div:first-child{
+    background-color: var(--bgmain);
+}
+.contact div:nth-child(2){
+    background-color: var(--menu);
+}
+.contact div:last-child{
+    background-color: var(--yellow);
 }

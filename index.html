@@ -12,43 +12,44 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/jprogress.css">
 </head>
 <body>
-      
-    <div class="mycontainer1">
-      <header>
-          <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="#">PORTFOLIO</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse menu1 navbar-collapse" id="navbarTogglerDemo01">
-                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Skills</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Experience journey</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#" tabindex="-1">Work presentation</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#" tabindex="-1">Contact</a>
-                      </li>
-                  </ul>
-              </div>
-              <form class="d-flex linkin d-none d-lg-block">
-                  <p class="mb-0 ps-3"><a href="https://in.linkedin.com/in/wasim-khan-bb9bb5145?trk=profile-badge"><i class="fab fa-linkedin p-0 fa-2x"></i></a></p>
-              </form>
+    <div class="topblock"></div>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">PORTFOLIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse menu1 navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Experience journey</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" tabindex="-1">Work presentation</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" tabindex="-1">Contact</a>
+                  </li>
+              </ul>
           </div>
-        </nav>
-      </header>
+          <form class="d-flex linkin d-none d-lg-block">
+              <p class="mb-0 ps-3"><a href="https://in.linkedin.com/in/wasim-khan-bb9bb5145?trk=profile-badge"><i class="fab fa-linkedin p-0 fa-2x"></i></a></p>
+          </form>
+      </div>
+    </nav>
+  </header>
+    <div class="mycontainer1">
       <main>
           <div class="intro">
               <div class="content-intro">
@@ -63,11 +64,9 @@
                     </a>
                   </p>
               </div>
-              <div class="profilepic">
-                  <div class="profile-pic">
-                      <img class="profile-image" src="img/stamp.svg" alt="profilepic">
-                  </div>
-              </div>
+              <div class="profile-pic">
+                <img class="profile-image" src="img/stamp.svg" alt="profilepic">
+            </div>
           </div>
       </main>
     </div>
@@ -79,12 +78,47 @@
       <section class="about">
         <div class="item scrollFade">
           <div class="about-content">
-            <input type="hidden" value="2017-01-16" id="date" name="dob" /><p><span id="age"></span> Years - Of total exprience(2 years of exprience as Web and graphic designing)</p>
-            <input type="hidden" value="2019-04-19" id="date1" name="dob" /><p class="my-3"><span id="age1"></span> as UI/UX designer and Frontend/Html development</p>
+            <aside>
+              <div>
+                <p><input type="date" value="2017-01-17" id="start_date" disabled>
+                  to
+                  <input type="date" id="end_Date" disabled>
+                  <span id="elapsed_years"></span> Years of Total Experience
+                  <p><input type="date" value="2017-01-17" id="start_date1" disabled>
+                    to
+                    <input type="date" value="2019-04-19" id="end_Date1" disabled>
+                    <span id="elapsed_years1"></span> Years of experience in Web and graphic designing
+                  </p>
+                  <p><input type="date" value="2019-04-19" id="start_date2" disabled>
+                    to
+                    <input type="date" id="end_Date2" disabled>
+                    <span id="elapsed_years2"></span> Years of experience as UI/UX Designing and Frontend/HTML developer
+                  </p>
+              </div>
+              <div>
+                <button id="myButton" onclick="calculateElapsedYears()">Click for Year count!</button>
+              </div>
+            </aside>
+            <aside class="mobile">
+              <div>
+                <p><input type="date" name="start_date" value="2017-01-17" id="start-date" disabled>
+                to
+                <input type="date" id="today1" disabled></p>
+                <p><span id="age"></span>-years of total experience</p>
+              </div>
+              <div>
+                <p><input type="date" name="start_date" value="2017-01-17" id="start-date" disabled> to <input type="date" name="end_Date" value="2019-01-19" id="end-date" disabled></p>
+                <p>2-years of experience as web designer in Ecommerce</p>
+              </div>
+              <div>
+                <p><input type="date" name="start_date" value="2019-04-19" id="start-date1" disabled> to <input type="date" id="today2" disabled></p>
+                <p><span id="age1"></span>-years of experience as UI/Ux designer Graphic-designing and frontend/HTML developer</p>
+              </div>
+            </aside>
           </div>
           <div class="about-cards">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col p-0">
+              <div class="col px-3 p-lg-0">
                 <div class="card">
                   <img src="img/pencil.svg" alt="pencil">
                   <div class="card-body">
@@ -96,7 +130,7 @@
                   </div> -->
                 </div>
               </div>
-              <div class="col p-0">
+              <div class="col px-3 p-lg-0">
                 <div class="card mid">
                   <img src="img/braket.svg" class="card-img-top" alt="bracket">
                   <div class="card-body">
@@ -109,7 +143,7 @@
                   </div> -->
                 </div>
               </div>
-              <div class="col p-0">
+              <div class="col px-3 p-lg-0">
                 <div class="card">
                   <img src="img/screen.svg" class="card-img-top" alt="screen">
                   <div class="card-body">
@@ -1300,6 +1334,7 @@
                         <li>UX research</li>
                         <li>Road map</li>
                         <li>Ui design for mobile</li>
+                        <li>Static HTML pages</li>
                       </ul>
                     </p>
                   </div>
@@ -1325,7 +1360,7 @@
                         </div>
                       </div>
                       <div class="modal-footer">
-                        <p>description</p>
+                        <p>Inovation studio is web platform exist on HPE portal need mobile application as well is a portal which give information about ongoing cloud computing projects about HPE</p>
                       </div>
                     </div>
                   </div>
@@ -1340,7 +1375,15 @@
                   </a>
                   <div class="card-body">
                     <h5 class="card-title">Green & Olive Re-design</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Its an Freelance project for one of the client the website is for Legal Advisory services</p>
+                    <p><b>Envolvement</b></p>
+                      <ul>
+                        <li>UX research</li>
+                        <li>Road map</li>
+                        <li>Ui Re-design</li>
+                        <li>User flow</li>
+                      </ul>
+                    </p>
                   </div>
                 </div>
                 <div class="modal fade" id="moda33" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1354,7 +1397,7 @@
                         <img src="img/work-img/green-n-olive-full.jpg" class="img-fluid" alt="ui-design">
                       </div>
                       <div class="modal-footer">
-                        <p>description</p>
+                        <p>Its an Freelance project for one of the client the website is for Legal Advisory services</p>
                       </div>
                     </div>
                   </div>
@@ -1784,10 +1827,42 @@
               </div>
             </div>
           </div>
-          <!-- <div id="tabs-3">
-            <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-            <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-          </div> -->
+        </div>
+      </section>
+    </div>
+    <div class="section-title">
+      <h3>Contact information</h3>
+    </div>
+    <div class="mycontainer">
+      <section class="contact">
+        <div>
+          <img src="img/email.svg" width="60" alt="email">
+          <h4>Email</h4>
+          <address>
+            <a href="mailto:khwasi.87@gmail.com">khwasi.87@gmail.com</a>
+          </address>
+        </div>
+        <div>
+          <img src="img/Contact.svg" width="60" alt="contact">
+          <h4>Contact</h4>
+          <p>
+            <a href="tel:9987612126">9987612126</a>
+          </p>
+          <p class="my-1">
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/+91998761216"> <img alt="Chat on WhatsApp" width="200" src="img/WhatsAppButtonGreenSmall.svg" />
+            </a>
+          </p>
+        </div>
+        <div>
+          <img src="img/address.svg" width="60" alt="sddress">
+          <h4>Address</h4>
+          <address>
+            <ul class="list-unstyled">
+              <li>Mumbai Central,</li>
+              <li> Nagpada juction,</li>
+              <li>Mumbai:400008.</li>
+            </ul> 
+          </address>
         </div>
       </section>
     </div>
