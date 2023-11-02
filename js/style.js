@@ -26,7 +26,7 @@ function scrollFade() {
 		var element = fadeElements[index];
 		var rect = element.getBoundingClientRect();
 
-		var elementFourth = rect.height/10;
+		var elementFourth = rect.height/8;
 		var fadeInPoint = window.innerHeight - elementFourth;
 		var fadeOutPoint = -(rect.height/0);
 
@@ -52,6 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollFade();
 });
 
+if ($(window).width() < 900) {
+    $('#tabs2').removeClass('scrollFade');
+}
+
 /*---------- owl carousel --------------*/
 
 $(document).ready(function() {
@@ -68,10 +72,12 @@ $(document).ready(function() {
 		navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
 	 	 responsive: {
 		0: {
-		  items: 1
+		  items: 1,
+		  nav:false
 		},
 		600: {
-		  items: 1
+		  items: 1,
+		  nav:false
 		},
 		1000: {
 		  items: 1
