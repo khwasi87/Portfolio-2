@@ -171,6 +171,13 @@
         padding-right: 16px;
     }
 
+    .about-content .mobile{
+        display: block;
+        grid-template-rows: unset;
+        grid-auto-rows: unset;
+        row-gap: unset;
+    }
+
     .about-content input[type=date] {
         max-width: unset;
         width: 100%;
@@ -186,8 +193,8 @@
     }
 
     .about-content .mobile div{
-        margin-bottom: 30px;
-        border-bottom: 1px solid var(--border);
+        border: transparent;
+        border-bottom: 3px solid var(--border);
     }
 
     .about-content aside:first-child{
