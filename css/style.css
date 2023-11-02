@@ -691,6 +691,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     background-color: var(--intro);
     border: 4px solid var(--border);
     border-top: 0;
+    border-bottom: 0;
     width: 100%;
     margin: 0 auto;
     padding: 50px 90px;
@@ -719,4 +720,14 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 }
 .contact div:last-child{
     background-color: var(--yellow);
+}
+
+/*========== footer ================*/
+
+.footer-title{
+    background-color: var(--border);
+    text-align: center;
+    padding: 14px 0;
+    color: var(--white);
+    font-size: 0.825rem;
 }

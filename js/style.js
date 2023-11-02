@@ -247,3 +247,10 @@ function calculateElapsedYears() {
 		document.getElementById("myButton").style.display = "none";
 	  }
 	  document.getElementById("myButton").addEventListener("click", disappear);
+
+	  /*========== copyright date===========*/
+
+	  $(document).ready(function() {
+		var currentYear = new Date().getFullYear();
+		$("#copyright-year").html(currentYear);
+	  });
