@@ -55,6 +55,19 @@ body{
     background-color: transparent;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .mycontainer1{
     max-width: 1440px;
     width: 100%;
@@ -62,13 +75,6 @@ body{
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
-}
-header{
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    margin-left: 16px;
-    margin-right: 16px;
 }
 
 .mycontainer{
@@ -200,6 +206,9 @@ button#download::after{
     padding: 10px 0;
     color: var(--white);
     z-index: 1;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /*=========== about me===========*/
@@ -599,7 +608,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 }
 
 .pro-crd-img{
-    max-width: 500px;
+    max-width: 575px;
     padding: 32px 32px 0 32px;
 }
 
