@@ -561,8 +561,9 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     width: 16px;
     height: 100px;
     position: absolute;
-    top: -54px;
-    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -24px;
     display: block !important;
     border: 0px solid black;
 }
@@ -578,8 +579,9 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     width: 16px;
     height: 100px;
     position: absolute;
-    top: -54px;
-    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -24px;
     display: block !important;
     border: 0px solid black;
 }
