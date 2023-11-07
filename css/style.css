@@ -17,9 +17,9 @@ h3,p{
     --textblack:#444444;
     --white:#ffff;
     --inactive:#ececec;
-    --menu:#BAF8D7;
-    --yellow:#f4f078;
-    --intro:#FFE3CE;
+    --menu:#C8FAE8;
+    --yellow:#FFEB59;
+    --intro:#FFEFD2;
     --text-muted:#6F6F6F;
 }
 
@@ -149,7 +149,7 @@ nav .nav-link:hover {
     align-items: center;
     flex-wrap: nowrap;
     column-gap: 20px;
-    padding: 60px
+    padding: 30px 40px
 }
 
 .content-intro{
@@ -221,7 +221,7 @@ button#download::after{
 .about{
     background-color: var(--white);
     text-align: left;
-    padding:30px 60px ;
+    padding:30px 40px ;
     border:4px solid var(--border);
     border-top: 0;
     border-bottom: 0;
@@ -636,23 +636,27 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 
 .projects .card{
     box-shadow: -12px 12px 0px var(--border);
-    border-radius: 0;  
+    border-radius: 0;
 }
 
 .projects .card .card-body{
     padding: 32px;
     position: relative;
-    min-height: 20em;
+    min-height: 42ch;
 }
 
 .projects .card .card-body .card-text{
     margin-top: 32px;
 }
 
+.projects .card .card-body .card-title{
+   font-size: 20px;
+   font-weight: 600;
+}
 .projects .card .card-body .card-title::after{
     content: '';
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 0;
     height: 1px;
     width: 100%;

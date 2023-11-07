@@ -26,7 +26,7 @@ function scrollFade() {
 		var element = fadeElements[index];
 		var rect = element.getBoundingClientRect();
 
-		var elementFourth = rect.height/10;
+		var elementFourth = rect.height/22;
 		var fadeInPoint = window.innerHeight - elementFourth;
 		var fadeOutPoint = -(rect.height/0);
 

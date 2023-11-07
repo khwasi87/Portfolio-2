@@ -1,15 +1,4 @@
-:root{
-    --bgmain:#C2F4FF;
-    --border: #474747;
-    --textblack:#444444;
-    --white:#ffff;
-    --inactive:#ececec;
-    --menu:#BAF8D7;
-    --yellow:#f4f078;
-    --intro:#FFE3CE;
-    --text-muted:#6F6F6F;
-}
-
+@import url(style.css);
 @media only screen and (max-width:800px) {
     .intro {
         display: flex;
@@ -58,6 +47,11 @@
 
     .mobile{
         display: block;
+    }
+
+    .about-cards .mid{
+        border-left: none;
+        border-right: none;
     }
 
     .about-cards .card{
@@ -134,7 +128,7 @@
         padding: 50px 16px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        row-gap: 20px;
+        column-gap: 20px;
     }
 }
 

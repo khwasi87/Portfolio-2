@@ -5,7 +5,7 @@
         // settings
         var settings = $.extend({
             animateTime: 5000,
-            background: '#01A982'
+            background: '#00E8CF'
         }, options);
         
         // return everytime when plugin function get called
