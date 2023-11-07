@@ -254,3 +254,9 @@ function calculateElapsedYears() {
 		var currentYear = new Date().getFullYear();
 		$("#copyright-year").html(currentYear);
 	  });
+
+	  $(document).ready(function(){
+		$("#close").click(function(){
+		  $("#alert").hide();
+		});
+	});

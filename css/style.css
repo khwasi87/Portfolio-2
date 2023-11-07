@@ -56,6 +56,43 @@ body{
     background-color: transparent;
 }
 
+.alert {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.successalert{
+    max-width: 500px;
+    width: 100%;
+    background-color: var(--white);
+    position: absolute;
+    box-shadow: 10px 5px 30px var(--border);
+    padding: 60px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.successalert aside{
+    border:3px dashed var(--border);
+    padding: 16px;
+}
+
+.close{
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    transition: 0.3s;
+}
+
+.close:hover{
+    cursor: pointer;
+    background-color: var(--inactive);
+    border-radius: 12px
+}
+
 header{
     position: sticky;
     top: 0;
