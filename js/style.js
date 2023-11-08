@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollFade();
 });
 
-if ($(window).width() < 800) {
+if ($(window).width() < 518) {
     $('#tabs2').removeClass('scrollFade');
 }
 
