@@ -15,46 +15,8 @@ $( function() {
   } );
 
 
-  /*---------- scrool fade ---------------*/
+  /*---------- scrool effect ---------------*/
 
-  var fadeElements = document.getElementsByClassName('scrollFade');
-
-function scrollFade() {
-	var viewportBottom = window.scrollY + window.innerHeight;
-
-	for (var index = 0; index < fadeElements.length; index++) {
-		var element = fadeElements[index];
-		var rect = element.getBoundingClientRect();
-
-		var elementFourth = rect.height/22;
-		var fadeInPoint = window.innerHeight - elementFourth;
-		var fadeOutPoint = -(rect.height/0);
-
-		if (rect.top <= fadeInPoint) {
-			element.classList.add('scrollFade--visible');
-			element.classList.add('scrollFade--animate');
-			element.classList.remove('scrollFade--hidden');
-		} else {
-			element.classList.remove('scrollFade--visible');
-			element.classList.add('scrollFade--hidden');
-		}
-
-		if (rect.top <= fadeOutPoint) {
-			element.classList.remove('scrollFade--visible');
-			element.classList.add('scrollFade--hidden');
-		}
-	}
-}
-
-document.addEventListener('scroll', scrollFade);
-window.addEventListener('resize', scrollFade);
-document.addEventListener('DOMContentLoaded', function() {
-    scrollFade();
-});
-
-if ($(window).width() < 518) {
-    $('#tabs2').removeClass('scrollFade');
-}
 
 /*---------- owl carousel --------------*/
 
@@ -85,26 +47,6 @@ $(document).ready(function() {
 	  }
 	})
   })
-
-  
-//   $('#mod2').owlCarousel({
-//     loop:true,
-//     margin:10,
-//     nav:true,
-// 	dots:true,
-// 	navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:1
-//         },
-//         1000:{
-//             items:1
-//         }
-//     }
-// })
 
 
 $("#mod, #mod2, #mod3, #mod4, #mod5, #mod6, #mod7, #mod8, #mod9").each(function() {
@@ -255,8 +197,21 @@ function calculateElapsedYears() {
 		$("#copyright-year").html(currentYear);
 	  });
 
-	  $(document).ready(function(){
+	$(document).ready(function(){
 		$("#close").click(function(){
 		  $("#alert").hide();
 		});
 	});
+
+	/*=========== progress bar =============*/
+
+	$(document).ready(function () {
+		$(window).on("scroll", function () {
+		  // Show & Hide Text On-Scroll
+		  if ($(window).scrollTop() > 1000) {
+			$(".progress-percent").fadeIn(6000);
+		  } else {
+			$(".progress-percent").fadeOut(1000);
+		  }
+		});
+	  });

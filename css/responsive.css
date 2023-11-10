@@ -63,7 +63,7 @@
 
     /*----------- skills ----------------*/
 
-    .skills span.text {
+    /* .skills span.text {
         position: absolute;
         top: 0;
         left: 50%;
@@ -71,7 +71,7 @@
         right: unset;
         color: var(--textblack);
         font-weight: 600;
-    }
+    } */
 
     /*----------- exprience ----------------*/
 
@@ -209,14 +209,14 @@
 
     /*----------- skills ----------------*/
 
-    .skills span.text {
+    /* .skills span.text {
         position: absolute;
         top: 0;
         left: 50%;
         transform: translate(-50%);
         right: unset;
         color: var(--textblack);
-    }
+    } */
 
     /*----------- exprience ----------------*/
     .journey {

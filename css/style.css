@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Poppins:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&family=Rubik:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     box-sizing: border-box;
 }
 
@@ -195,6 +195,7 @@ nav .nav-link:hover {
 .content-intro h3{
     font-weight: 500;
     margin-bottom: 20px;
+    font-family: 'Anton', sans-serif;
 }
 .content-intro p:nth-child(4) span{
     font-weight: 600;
@@ -252,6 +253,9 @@ button#download::after{
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
+}
+.section-title h3{
+    font-family: 'Anton', sans-serif;
 }
 
 /*=========== about me===========*/
@@ -349,6 +353,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .about-cards .card-title{
     margin: 20px 0;
+    font-family: 'Anton', sans-serif;
 }
 
 /*----cards1 ends-----*/
@@ -473,34 +478,85 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     flex: 1 1 auto;
     padding: 0.5rem 0.5rem;
 }
+.tools-accordion .card-body .card-title{
+    font-weight: 600;
+}
 .tools-accordion tbody td {
-    font-size: 0.8em;
+    font-size: 0.875em;
 }
 
 /*---progress bar---*/
 
-.progress_single_wrapper {
-    background-color: var(--inactive);
-    border-radius: 3px;
-    margin-bottom: 20px;
-    position: relative;
-    font-weight: 500;
-  }
-  
-  .progress_single {
-    width: 0;
-    color: white;
-    font-family: inherit;
-    padding: 10px 0;
-    margin-top: 4px;
-  }
 
-  .skills span.text {
-    position: absolute;
-    top: 0;
-    right: -50px;
-    color: var(--textblack);
+.my-progressbar {
+	margin-bottom: 10px;
 }
+.my-progressbar p.title {
+	font-family: Montserrat, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0;
+	padding: 5px 0;
+}
+.my-progressbar .bar-container {
+	position: relative;
+	height: 40px;
+}
+.my-progressbar .bar-container.shadow {
+	-moz-box-shadow: 0px 5px 7px -3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0px 5px 7px -3px rgba(0,0,0,.5);
+	box-shadow: 0px 5px 7px -3px rgba(0,0,0,.5);
+}
+.my-progressbar .backgroundBar {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.my-progressbar .bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+.my-progressbar .targetBar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	-webkit-animation: Animation 2s infinite ease-in-out;
+	-moz-animation: Animation 2s infinite ease-in-out;
+	animation: Animation 2s infinite ease-in-out;
+}
+
+.my-progressbar .bar-container.border .bar, .my-progressbar .bar-container.border .targetBar, .my-progressbar .bar-container.border .backgroundBar {
+	border-bottom: 3px solid rgba(0,0,0,.2);
+}
+.my-progressbar .progress-percent {
+	font-size: 16px;
+	position: absolute;
+	right: 15px;
+}
+
+@keyframes Animation {
+  0%   { opacity:.4; }
+  50%   { opacity:1; }
+  100% { opacity:.4; }
+}
+@-moz-keyframes Animation{
+  0%   { opacity:.4; }
+  50%   { opacity:1; }
+  100% { opacity:.4; }
+}
+@-webkit-keyframes Animation{
+  0%   { opacity:.4; }
+  50%   { opacity:1; }
+  100% { opacity:.4; }
+}
+
+
+/*-------------- progress bar ends-----------------*/
 
 #tabs-1 ul li p{
     font-weight: 600;
@@ -521,7 +577,6 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .journey .card{
     max-width: 536px;
     width: 100%;
-    border: 3px solid var(--border);
     border-radius: 0;
     background-color: var(--intro);
     box-shadow: -12px 12px 0px var(--border);
@@ -531,6 +586,9 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .journey .card-body h6{
     font-weight: 600;
     color: var(--textblack)!important;
+}
+.journey .card-body .card-title{
+    font-weight: 600;
 }
 
 .date{
@@ -682,7 +740,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .projects .card .card-body{
     padding: 32px;
     position: relative;
-    min-height: 42ch;
+    min-height: 39ch;
 }
 
 .projects .card .card-body .card-text{
