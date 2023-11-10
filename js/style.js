@@ -19,36 +19,6 @@ $( function() {
 
 
 /*---------- owl carousel --------------*/
-
-$(document).ready(function() {
-	var owl = $('.owl-carousel');
-	owl.owlCarousel({
-	  	// stagePadding: 75,
-	 	margin: 15,
-		autoplay:true,
-		autoplayTimeout:5000,
-		autoplayHoverPause:true,
-	  	nav: true,
-	  	loop: true,
-	  	dots:true,
-		navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-	 	 responsive: {
-		0: {
-		  items: 1,
-		  nav:false
-		},
-		600: {
-		  items: 1,
-		  nav:false
-		},
-		1000: {
-		  items: 1
-		}
-	  }
-	})
-  })
-
-
 $("#mod, #mod2, #mod3, #mod4, #mod5, #mod6, #mod7, #mod8, #mod9").each(function() {
 	$(this).owlCarousel({
 		loop:true,

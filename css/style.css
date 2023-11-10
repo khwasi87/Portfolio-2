@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&family=Rubik:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
 
@@ -84,14 +84,21 @@ body{
     position: absolute;
     top: 16px;
     right: 10px;
-    transition: 0.3s;
+    
 }
 
-.close:hover{
-    cursor: pointer;
-    background-color: var(--inactive);
-    border-radius: 12px
+.close .btn::after{
+    display: inline-flex;
+    content: '';
+    background-image: url('../img/close.svg');
+    background-size: 20px 20px;
+    position: absolute;
+    top: 10;
+    right: 14px;
+    width: 20px;
+    height: 20px;
 }
+
 
 header{
     position: sticky;
@@ -278,7 +285,7 @@ button#download::after{
     column-gap: 20px;
 }
 .about-content p{
-    font-weight: 600;
+    font-weight: 500;
     width: 100%;
     font-size: 1rem;
     color: var(--textblack);
@@ -353,7 +360,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .about-cards .card-title{
     margin: 20px 0;
-    font-family: 'Anton', sans-serif;
+    font-weight:bold;
 }
 
 /*----cards1 ends-----*/
@@ -639,20 +646,6 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 
 /*------- owl carousel ----------*/
 
-.owl-carousel .item{
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23474747FF' stroke-width='6' stroke-dasharray='0' stroke-dashoffset='4' stroke-linecap='square'/%3e%3c/svg%3e");
-    padding: 3px;
-}
-
-.carouselContent{
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-    padding: 14px 0;
-    background-color: var(--white);
-    border-top: 3px solid var(--border);
-    color: var(--textblack);
-}
 
 .owl-carousel .owl-nav button.owl-prev {
     background-color: var(--inactive);
@@ -660,34 +653,11 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     height: 40px;
     border-radius: 50%;
 }
-
-.projects .owl-prev {
-    width: 16px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -24px;
-    display: block !important;
-    border: 0px solid black;
-}
-
 .owl-carousel .owl-nav button.owl-next {
     background-color: var(--inactive);
     width: 40px;
     height: 40px;
     border-radius: 50%;
-}
-
-.projects .owl-next {
-    width: 16px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -24px;
-    display: block !important;
-    border: 0px solid black;
 }
 
 .projects .owl-dots {
@@ -829,7 +799,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 }
 .contact div h4{
     margin: 12px 0;
-    font-weight: 600;
+    font-weight: bold;
 }
 .contact div:first-child{
     background-color: var(--bgmain);
