@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
     box-sizing: border-box;
 }
 
@@ -642,6 +642,35 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     max-width: 1246px;
     width: 100%;
     margin: 0 auto;
+}
+
+.projects .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.projects .gallery a {
+    max-width: 425px;
+    height: fit-content;
+    box-shadow: -12px 12px 0px var(--border);
+}
+.projects .gallery a img{
+    width: 100%;
+    transition: 0.5s;
+}
+.projects .gallery a:hover img{
+    transform: scale(1.03);
+}
+
+.projects .gallery a {
+    color: #009688;
+    text-decoration: none;
+}
+
+.projects .gallery a:hover {
+    color: #01695f;
+    text-decoration: none;
 }
 
 /*------- owl carousel ----------*/

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/jprogress.css">
+    <link rel="stylesheet" href="css/simple-lightbox.css">
 </head>
 <body>
     <div class="topblock"></div>
@@ -914,7 +915,18 @@
             <!-- <li><a href="#tabs-3">Aenean lacinia</a></li> -->
           </ul>
           <div id="tabs-3">
-            
+            <div class="gallery">
+              <a href="img/work-img/GRM-1.jpg"><img src="img/work-img/GRM-1.jpg" title="HPE Greenlake Rapid cloud migration" alt=""/></a>
+              <a href="img/work-img/MAP-E-1.jpg"><img src="img/work-img/MAP-E-1.jpg" alt="" title="Monitering Analytics performance engine"/></a>
+              <a href="img/work-img/Innovtion-studio-m.jpg"><img src="img/work-img/Innovtion-studio-m.jpg" alt="" title="Innovation Studio mobile"/></a>
+              <a href="img/work-img/DOT-home.jpg"><img src="img/work-img/DOT-home.jpg" alt="" title="Data Orcastration Tool for data source connection"/></a>
+              <a href="img/work-img/Delta.jpg"><img src="img/work-img/Delta.jpg" alt="" title="Delta A knowledge managment center"/></a>
+              <a href="img/work-img/Bizben.jpg"><img src="img/work-img/Bizben.jpg" alt="" title="Bizben A Knowledge based website for Loan and mortgage."/></a>
+              <div class="clear"></div>
+            </div>
+            <caption>
+                Click on an image to see it in action. Note, that the lightbox is grouped by rel attribute.
+            </caption>
           </div>
           <div id="tabs-4">
             <div class="row row-cols-1 row-cols-md-2 g-5">
@@ -1946,8 +1958,12 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/style.js"></script>
     <script src="js/progressbar.js"></script>
-    <script src="js/-0.1.js"></script>
+    <script src="js/simple-lightbox.js"></script>
     <script>
+      /*---------- grid image function call ---------------*/
+      (function() {
+          var $gallery = new SimpleLightbox('.gallery a', {});
+      })();
 
       /*------------------ progress bar -------------------*/
 

@@ -208,6 +208,7 @@
     }
 
     /*----------- skills ----------------*/
+    
 
     /* .skills span.text {
         position: absolute;
@@ -237,7 +238,7 @@
         border: 4px solid var(--border);
         border-top: 0;
         border-bottom: 0;
-        padding: 30px 16px;
+        padding: 30px 12px;
     }
 
     .ui-tabs .ui-tabs-nav {
@@ -262,6 +263,12 @@
     .pro-crd-img {
         max-width: 500px;
         padding: 8px 12px 0 12px;
+    }
+
+    .projects .gallery {
+        display: grid;
+        grid-template-columns: unset;
+        gap: 20px;
     }
 
     .owl-carousel .item {
