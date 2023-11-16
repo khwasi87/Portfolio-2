@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
 
@@ -644,6 +644,14 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
     margin: 0 auto;
 }
 
+.projects aside{
+    background-color: var(--yellow);
+    text-align: center;
+    padding: 12px;
+    margin: 10px auto;
+    font-weight: 600;
+}
+
 .projects .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -714,7 +722,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 
 .pro-crd-img{
     max-width: 575px;
-    padding: 32px 32px 0 32px;
+    padding: 32px;
 }
 
 .pro-crd-img img{
@@ -737,9 +745,10 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 }
 
 .projects .card .card-body{
-    padding: 32px;
+    padding: 16px 32px 32px 32px;
     position: relative;
     min-height: 39ch;
+    background-color: var(--white);
 }
 
 .projects .card .card-body .card-text{
@@ -753,7 +762,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .projects .card .card-body .card-title::after{
     content: '';
     position: absolute;
-    top: 15%;
+    top: 12%;
     left: 0;
     height: 1px;
     width: 100%;
