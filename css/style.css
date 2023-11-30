@@ -779,7 +779,7 @@ li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-act
 .projects .card .card-body{
     padding: 16px 32px 32px 32px;
     position: relative;
-    min-height: 39ch;
+    min-height: 48ch;
     background-color: var(--white);
 }
 
