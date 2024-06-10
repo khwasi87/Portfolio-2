@@ -162,11 +162,6 @@ function calculateElapsedYears() {
 
 	  /*========== copyright date===========*/
 
-	  $(document).ready(function() {
-		var currentYear = new Date().getFullYear();
-		$("#copyright-year").html(currentYear);
-	  });
-
 	$(document).ready(function(){
 		$("#close").click(function(){
 		  $("#alert").hide();
@@ -300,4 +295,8 @@ function calculateElapsedYears() {
 	
 	
 	})(jQuery);
+
+	/*------------ project carousel -------------*/
+
+
 	

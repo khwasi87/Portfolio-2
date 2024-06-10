@@ -1,5 +1,5 @@
 @import url(style.css);
-@media only screen and (max-width:800px) {
+@media screen and (min-width:800px) and (max-width:1100)  {
     .intro {
         display: flex;
         justify-content: space-between;
@@ -87,6 +87,11 @@
         display: none;
     }
 
+    .journey .card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     /*----------- projects ----------------*/
     .projects {
         background-color: var(--menu);
@@ -101,6 +106,7 @@
         display: flex;
         justify-content: flex-start;
         max-width: 700px;
+        overflow-x: scroll;
         width: 100%;
         height: auto;
         padding: 0.2em 0.2em 0;
@@ -130,6 +136,7 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 20px;
     }
+
 }
 
 @media only screen and (max-width:430px) {
@@ -142,11 +149,11 @@
         padding: 16px;
     }
     .intro .content-intro {
-        max-width: 275px;
+        max-width: fit-content;
     }
 
     .profile-pic{
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='10' stroke-dasharray='15%2c 15%2c 1' stroke-dashoffset='5' stroke-linecap='square'/%3e%3c/svg%3e");
+        /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='10' stroke-dasharray='15%2c 15%2c 1' stroke-dashoffset='5' stroke-linecap='square'/%3e%3c/svg%3e"); */
         max-width: 270px;
         width: 100%;
         padding: 10px;
@@ -189,6 +196,7 @@
     .about-content .mobile div{
         border: transparent;
         border-bottom: 3px solid var(--border);
+        margin-bottom: 20px;
     }
 
     .about-content aside:first-child{
@@ -256,7 +264,7 @@
     .ui-tabs .ui-tabs-panel {
         display: block;
         border-width: 0;
-        padding: 1em 0.675em;
+        padding: 1em 0em;
         background: none;
     }
 
@@ -270,6 +278,11 @@
         grid-template-columns: unset;
         gap: 20px;
     }
+    .projects .projectgrid{
+        display: grid;
+        grid-template-columns: unset;
+        gap: 20px;
+    }
 
     .owl-carousel .item {
         min-height: 300px;
@@ -279,13 +292,34 @@
         top: 18%;
     }
 
+    .project-intro {
+        background-color: var(--white);
+        border: 4px solid var(--border);
+        border-top: 0px;
+        border-bottom: 0px;
+        column-gap: 20px;
+        padding: 0 40px;
+    }
+
+    .project-intro section figure .pro-gallery{
+        max-width: 1440px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: unset;
+        row-gap: 20px;
+    }
+
     /*----------- contact ----------------*/
 
     .contact{
         padding: 50px 16px;
         display: grid;
         grid-template-columns: unset;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         row-gap: 20px;
+    }
+
+    .resumbtn{
+        grid-column: unset;
     }
 }

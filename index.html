@@ -15,9 +15,15 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/jprogress.css">
     <link rel="stylesheet" href="css/simple-lightbox.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html");  
+      });
+    </script>
 </head>
 <body>
-    <div class="topblock"></div>
     <section class="alert" id="alert">
       <article class="successalert">
         <div class="close">
@@ -29,57 +35,23 @@
         </aside>
       </article>
     </section>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#">PORTFOLIO</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse menu1 navbar-collapse" id="navbarTogglerDemo01">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#skill">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#expj">Experience journey</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#workp" tabindex="-1">Work presentation</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#contact" tabindex="-1">Contact</a>
-                  </li>
-              </ul>
-          </div>
-          <form class="d-flex linkin d-none d-lg-block">
-              <p class="mb-0 ps-3"><a href="https://in.linkedin.com/in/wasim-khan-bb9bb5145?trk=profile-badge"><i class="fab fa-linkedin p-0 fa-2x"></i></a></p>
-          </form>
-      </div>
-    </nav>
-  </header>
+    <div id="header"></div>
     <div class="mycontainer1">
       <main>
           <div class="intro">
               <div class="content-intro">
-                  <h3>
+                  <h1>
                       Wasim Salim Khan
-                  </h3>
+                  </h1>
                   <ul>
-                    <li><p>Expirience in UI UX/Product designing</p></li>
-                    <li><p class="my-2">Frontend/HTML development</p></li>
-                    <li><p>Freelance graphic designer</p></li>
+                    <li>UI UX/Product designing</li>
+                    <li class="border"></li>
+                    <li>Frontend/HTML development</li>
+                    <li class="border"></li>
+                    <li>Freelance graphic designer</li>
+                    <li class="border"></li>
+                    <li>Freelance Wordpress developer</li>
                   </ul>
-                  <p class="my-4">As a versatile UX/Product Designer,Graphic with a 6 years of Experience in which 2.5years as Front-End/HTML developer, I seamlessly blend my expertise in creating compelling user experiences design with my skills in frontend/HTML development,Graphic designing resulting in innovative and user-centric design solutions. confident that my extensive skill set will contribute to driving impactful results and fostering positive user engagement. Kindly review my full Portfolio to discover how my Skills and Experience can be useful to your organization.
-                  </p>
-                  <p>
-                    <a href="files/Resume-Wasim-Khan.pdf" download="" style="text-decoration: none;">
-                      <button id="download">Download resume</button>
-                    </a>
-                  </p>
               </div>
               <div class="profile-pic">
                 <img class="profile-image" src="img/stamp.svg" alt="profilepic">
@@ -89,31 +61,34 @@
     </div>
   
     <div id="about" class="section-title">
-      <h3>About me</h3>
+      <h4>About me</h4>
     </div>
     <div class="mycontainer">
       <section class="about">
-        <div class="item ">
+          <div>
+            <p class="mb-5 brief">As a versatile UX/Product and Graphic designer with 6 years of Experience in which 2.5 years as Front-End/HTML developer, I seamlessly blend my expertise in creating compelling user experiences design with my skills in frontend/HTML development,Graphic designing resulting in innovative and user-centric design solutions. confident that my extensive skill set will contribute to driving impactful results and fostering positive user engagement. Kindly review my full Portfolio to discover how my Skills and Experience can be useful to your organization.
+            </p>
+          </div>
           <div class="about-content">
             <aside>
               <div>
                 <p><input type="date" value="2017-01-17" id="start_date" disabled>
                   to
                   <input type="date" id="end_Date" disabled>
-                  <span id="elapsed_years"></span> Years of Total Experience
+                  <span id="elapsed_years"></span> <b>Years of Total Experience</b>
                   <p><input type="date" value="2017-01-17" id="start_date1" disabled>
                     to
                     <input type="date" value="2019-04-19" id="end_Date1" disabled>
-                    <span id="elapsed_years1"></span> Years of experience in Web and graphic designing
+                    <span id="elapsed_years1"></span> <b>of experience in Web and graphic designing</b>
                   </p>
                   <p><input type="date" value="2019-04-19" id="start_date2" disabled>
                     to
                     <input type="date" id="end_Date2" disabled>
-                    <span id="elapsed_years2"></span> Years of experience as UI/UX Designing and Frontend/HTML developer
+                    <span id="elapsed_years2"></span> <b>Years of experience as UI/UX Designing/HTML CSS3 bootstrape</b>
                   </p>
               </div>
               <div>
-                <button id="myButton" onclick="calculateElapsedYears()">Click here!</button>
+                <button id="myButton" onclick="calculateElapsedYears()">CLICK HERE!</button>
               </div>
             </aside>
             <aside class="mobile">
@@ -143,13 +118,13 @@
                     <p class="card-text">
                       <ul class="mx-0">
                         <li>
-                          As an accomplished UX/Product Designer with 4 years of experience,
+                          As an accomplished UX/Product Designer with 4 years of experience.
                         </li>
                         <li>
-                          To create intuitive and engaging digital experiences by utilizing a user-centered design approach,
+                          To create intuitive and engaging digital experiences by utilizing a user-centered design approach.
                         </li>
                         <li>
-                          expert knowledge of design tools such as <span><b>Figma, Adobe Creative Suite and Invision,</b></span>
+                          expert knowledge of design tools such as <span><b>Figma, Adobe Creative Suite and Invision.</b></span>
                         </li>
                         <li>
                           proven track record for delivering visually stunning, user-friendly, and highly functional interfaces that meet or exceed business objectives.
@@ -169,14 +144,14 @@
                     <h5 class="card-title">Front-End/HTML Development</h5>
                     <p class="card-text">
                       <ul>
-                        <li>knowledgeble and motivated Frontend/HTML Developer with 2.5 years of experience in developing user-friendly and responsive website</li>
+                        <li>knowledgeble and motivated Frontend/HTML Developer with 2.5 years of experience in developing user-friendly and responsive website.</li>
                         <li>Detail-oriented and passionate about writing clean and efficient code.</li>
-                        <li>Excellent problem-solving skills in terms of web language</li>
-                        <li>Proficient in HTML, CSS, Bootstrap</li>
-                        <li>Proficient with UI/UX principles and best practices</li>
-                        <li>Basic understanding of JavaScript, jQuery</li>
-                        <li>Experience with version control systems like Git</li>
-                        <li>Knowledge of responsive design principles and cross-browser compatibility</li>
+                        <li>Excellent problem-solving skills in terms of web language.</li>
+                        <li>Proficient in HTML, CSS, Bootstrap.</li>
+                        <li>Proficient with UI/UX principles and best practices.</li>
+                        <li>Basic understanding of JavaScript, jQuery.</li>
+                        <li>Experience with version control systems like Git.</li>
+                        <li>Knowledge of responsive design principles and cross-browser compatibility.</li>
                       </ul>
                     </p>
                   </div>
@@ -194,9 +169,9 @@
                       <ul>
                         <li>Worked with clients to create custom designs for branding, advertising, promotional materials.</li>
                         <li>Developed creative concepts and presented design options to clients for approval.</li>
-                        <li>freelace website development using Wordpress Elementor from custome template or scratch</li>
-                        <li>Produced high-quality designs within given timeframes</li>
-                        <li>Strong understanding of typography, color theory, and composition in design</li>
+                        <li>freelace website development using Wordpress Elementor from custome template or scratch.</li>
+                        <li>Produced high-quality designs within given timeframes.</li>
+                        <li>Strong understanding of typography, color theory, and composition in design.</li>
                       </ul>
                     </p>
                   </div>
@@ -207,39 +182,34 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
     </div>
   
     <div id="skill" class="section-title">
-      <h3>My Skills & Expertise</h3>
+      <h4>My Skills & Expertise</h4>
     </div>
     <div class="mycontainer">
       <section class="skills">
           <div id="tabs1" class="item ">
             <ul>
-              <li><a href="#tabs-1">Skills</a></li>
-              <li><a href="#tabs-2">Tool expertise</a></li>
+              <li><a href="#tabs_1">Skills</a></li>
+              <li><a href="#tabs_2">Tool expertise</a></li>
               <!-- <li><a href="#tabs-3">Aenean lacinia</a></li> -->
             </ul>
-            <div id="tabs-1">
+            <div id="tabs_1">
                 <div class="col-12">
                   <ul class='skill ps-0'>
                     <li class='progressbar1' data-width='90' data-target='90'>UI-UX/Product designing</li>
                     <li class='progressbar1' data-width='85' data-target='90'>Graphic-designing</li>
-                    <li class='progressbar1' data-width='75' data-target='90'>Static and animated logos</li>
-                    <li class='progressbar2' data-width='50' data-target='90'>2D animation videos</li>
-                    <li class='progressbar2' data-width='70' data-target='90'>Video editing</li>
-                    <li class='progressbar3' data-width='80' data-target='90'>HTML</li>
-                    <li class='progressbar3' data-width='90' data-target='90'>CSS3</li>
-                    <li class='progressbar3' data-width='50' data-target='90'>jQuery</li>
-                    <li class='progressbar3' data-width='40' data-target='90'>JavaScript</li>
+                    <li class='progressbar2' data-width='70' data-target='90'>Video editing and 2D animation videos</li>
+                    <li class='progressbar3' data-width='80' data-target='90'>HTML/CSS3</li>
+                    <li class='progressbar3' data-width='50' data-target='90'>JavaScript/jQuery</li>
                     <li class='progressbar4' data-width='60' data-target='90'>Wordpress Development</li>
-                    <li class='progressbar4' data-width='70' data-target='90'>GiT</li>
+                    <li class='progressbar4' data-width='70' data-target='90'>GIT</li>
                 </ul>
               </div>
             </div>
-            <div id="tabs-2">
+            <div id="tabs_2">
               <div id="accordion" class="tools-accordion">
                 <h3>UI/UX Designing</h3>
                 <div>
@@ -762,1156 +732,341 @@
                 </div>
               </div>
             </div>
-            <!-- <div id="tabs-3">
-              <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-              <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-            </div> -->
           </div>
       </section>
     </div>
   
     <div id="expj" class="section-title">
-      <h3>Exprience journey</h3>
-    </div>
-    <div class="mycontainer">
-      <section class="journey">
-        <div class="col-12 comptab mb-5 d-flex justify-content-start align-items-center item">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">UX designer and Front-End developer</h5>
-              <h6 class="card-subtitle my-3 text-muted">Dynpro India PVT.LTD(Client HPE)<span class="date"> Oct 2022 - Working</span></h6>
-              <p class="card-text">
-                <ul>
-                  <li>Working as UX designer and HTML developer</li>
-                  <li>Working Multiple Desktop application</li>
-                  <li>
-                    <p>Project name</p>
-                    <blockquote>
-                      <ol>
-                        <li>Green lake rapid migration</li>
-                        <li>U2L Code assessment tool</li>
-                        <li>APM Monetring tool</li>
-                        <li>Cosmos Language integration tool</li>
-                        <li>innovation studio mobile app design</li>
-                      </ol>
-                    </blockquote>
-                  </li>
-                  <li>Logo Designing</li>
-                  <li>static html componenet and page development</li>
-                </ul>
-              </p>
+      <h4>Exprience journey</h4>
+      </div>
+      <div class="mycontainer">
+        <section class="journey">
+          <div class="mb-5 row row-cols-1 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">UX designer and Front-End developer</h5>
+                  <h6 class="card-subtitle my-3">Dynpro India PVT.LTD(Client HPE)</h6>
+                  <p class="date"> Oct 2022 - Working</p>
+                  <p class="card-text">
+                    <ul>
+                      <li>Working as UX designer and HTML developer</li>
+                      <li>Working Multiple Desktop application</li>
+                      <li>
+                        <p>Project name</p>
+                        <blockquote>
+                          <ol>
+                            <li>Green lake rapid migration</li>
+                            <li>U2L Code assessment tool</li>
+                            <li>APM Monetring tool</li>
+                            <li>Cosmos Language integration tool</li>
+                            <li>innovation studio mobile app design</li>
+                          </ol>
+                        </blockquote>
+                      </li>
+                      <li>Logo Designing</li>
+                      <li>static html componenet and page development</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">UI/UX designer</h5>
+                  <h6 class="card-subtitle my-3">JustDial LTD</h6>
+                  <p class="date">June 2021 - Sep 2022</p>
+                  <p class="card-text">
+                    <ul>
+                      <li>User experience designer</li>
+                      <li>Video edition and 2d animation</li>
+                      <li>
+                        <p>Application designing</p>
+                        <blockquote>
+                          <ol>
+                            <li>Just dial Employee assessment app</li>
+                            <li>Genio lite</li>
+                            <li>Jd market place</li>
+                            <li>employee assessment desktop application</li>
+                            <li>JD employee portal</li>
+                          </ol>
+                        </blockquote>
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">UI/UX designer and Frontend developer</h5>
+                  <h6 class="card-subtitle my-3">QBS(Client Nabard - contarct)</h6>
+                  <p class="date">Nov 2020 - June 2021</p>
+                  <p class="card-text">
+                    <ul>
+                      <li>Nabnet employee portal(Design and frontent development)</li>
+                      <li>Nabard loan portal desktop application(Design and development)</li>
+                      <li>Social-media post and banner design</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">UI/UX designer and frontend developer</h5>
+                  <h6 class="card-subtitle my-3">Atishay.LTD</h6>
+                  <p class="date">April 2019 - Nov 2020</p>
+                  <p class="card-text">
+                    <ul>
+                      <li>Junior UI designer and developer</li>
+                      <li>Web UIdesigning and development</li>
+                      <li>Andriod application designing</li>
+                      <li>Social-media post and banner designing</li>
+                      <p>Projects</p>
+                        <blockquote>
+                          <ol>
+                            <li>Maxidoo Hotel managment web and Application</li>
+                            <li>Zapurse Web and mobile application</li>
+                            <li>Esahyogweb and mobile application</li>
+                            <li>Trackvec website designing and development</li>
+                          </ol>
+                        </blockquote>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Graphic and Web designer</h5>
+                  <h6 class="my-3">Zapmart</h6>
+                  <p class="date">Jan 2017 - April 2019</p>
+                  <p class="card-text">
+                    <ul>
+                      <li>Graphic designer for web and social media</li>
+                      <li>Web designer and frontend</li>
+                      <li>Ecommerce Customer handling</li>
+                      <li>Social media handling</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 comptab mb-5 d-flex justify-content-end align-items-center item ">
-          <div class="footleft d-lg-block d-none">
-            <img src="img/foot-justdial-dynpro.gif" alt="footprint">
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">UI/UX designer</h5>
-              <h6 class="card-subtitle my-3 text-muted">JustDial LTD <span class="date">June 2021 - Sep 2022</span></h6>
-              <p class="card-text">
-                <ul>
-                  <li>User experience designer</li>
-                  <li>Video edition and 2d animation</li>
-                  <li>
-                    <p>Application designing</p>
-                    <blockquote>
-                      <ol>
-                        <li>Just dial Employee assessment app</li>
-                        <li>Genio lite</li>
-                        <li>Jd market place</li>
-                        <li>employee assessment desktop application</li>
-                        <li>JD employee portal</li>
-                      </ol>
-                    </blockquote>
-                  </li>
-                </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 comptab mb-5 d-flex justify-content-start align-items-center item ">
-          <div class="card ">
-            <div class="card-body">
-              <h5 class="card-title">UI/UX designer and Frontend developer</h5>
-              <h6 class="card-subtitle my-3 text-muted">QBS(Client Nabard - contarct) <span class="date">Nov 2020 - June 2021</span></h6>
-              <p class="card-text">
-                <ul>
-                  <li>Nabnet employee portal(Design and frontent development)</li>
-                  <li>Nabard loan portal desktop application(Design and development)</li>
-                  <li>Social-media post and banner design</li>
-                </ul>
-              </p>
-            </div>
-          </div>
-          <div class="footright d-lg-block d-none">
-            <img src="img/foot-quan-Justdial.gif" alt="footprint">
-          </div>
-        </div>
-        <div class="col-12 comptab mb-5 d-flex justify-content-end align-items-center item ">
-          <div class="footleft d-lg-block d-none">
-            <img src="img/foot-atishay-quan.gif" alt="footprint">
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">UI/UX designer and frontend developer</h5>
-              <h6 class="card-subtitle my-3 text-muted">Atishay.LTD <span class="date">April 2019 - Nov 2020</span></h6>
-              <p class="card-text">
-                <ul>
-                  <li>Junior UI designer and developer</li>
-                  <li>Web UIdesigning and development</li>
-                  <li>Andriod application designing</li>
-                  <li>Social-media post and banner designing</li>
-                  <p>Projects</p>
-                    <blockquote>
-                      <ol>
-                        <li>Maxidoo Hotel managment web and Application</li>
-                        <li>Zapurse Web and mobile application</li>
-                        <li>Esahyogweb and mobile application</li>
-                        <li>Trackvec website designing and development</li>
-                      </ol>
-                    </blockquote>
-                </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 comptab mb-5 d-flex justify-content-start align-items-center item ">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Graphic and Web designer</h5>
-              <h6 class="card-subtitle my-3 text-muted">Zapmart <span class="date">Jan 2017 - April 2019</span></h6>
-              <p class="card-text">
-                <ul>
-                  <li>Graphic designer for web and social media</li>
-                  <li>Web designer and frontend</li>
-                  <li>Ecommerce Customer handling</li>
-                  <li>Social media handling</li>
-                </ul>
-              </p>
-            </div>
-          </div>
-          <div class="footright d-lg-block d-none">
-            <img src="img/footzap-atishay.gif" alt="footprint">
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     <div id="workp" class="section-title">
-      <h3>Projects worked on</h3>
+      <h4>Projects worked on</h4>
     </div>
     <div class="mycontainer">
       <section class="projects">
         <div id="tabs2" class="item ">
           <ul class="mb-4">
-            <li><a href="#tabs-3">Recent Projects</a></li>
-            <li><a href="#tabs-4">All UX Designing</a></li>
-            <li><a href="#tabs-5">All Design & development</a></li>
-            <li><a href="#tabs-6">All Graphic designing</a></li>
+            <li><a href="#tabs-1">UI-UX Projects</a></li>
+            <li><a href="#tabs-2">UI designing & development</a></li>
+            <li><a href="#tabs-3">Freelance/Part time</a></li>
             <!-- <li><a href="#tabs-3">Aenean lacinia</a></li> -->
           </ul>
+          <div id="tabs-1">
+            <div class="projectgrid">
+              <div class="grid-card">
+                <img src="img/work-img/justdialLC1.jpg" alt="JustDial">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>Justdial Learning center</h5>
+                    <p>Company:Justdial.LTD</p>
+                  </div>
+                  <a href="learningcenter.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/maxidoo.jpg" alt="maxidoo">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>Maxidoo hotel reservation Application</h5>
+                    <p>Company:Atishay.LTD</p>
+                  </div>
+                  <a href="maxidoo-app.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/zapurse.jpg" alt="zapurse">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>Zapurse ticket booking and Money transfer Platform</h5>
+                    <p>Company:Atishay.LTD</p>
+                  </div>
+                  <a href="zapurse-mobile.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/esahyog.jpg" alt="esahyog">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>MP Government Local mandi Application for farmers</h5>
+                    <p>Company:Atishay.LTD</p>
+                  </div>
+                  <a href="learningcenter.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/GRM-1.jpg" alt="GRM-1">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>HPE VM cloud migration Tool</h5>
+                    <p>Company:HPE</p>
+                  </div>
+                  <a href="project-page-grm.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/MAP-E-login.jpg" alt="MAP-E-1">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>HPE System monitoring Tool</h5>
+                    <p>Company:HPE</p>
+                  </div>
+                  <a href="project-page-grm.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/DOT-home.jpg" alt="DOT-home">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>HPE VM Data orcashtration Tool</h5>
+                    <p>Company:HPE</p>
+                  </div>
+                  <a href="project-page-grm.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/Innovtion-studio-m.jpg" alt="Inovation">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>HPE Project innovation studio</h5>
+                    <p>Company:HPE</p>
+                  </div>
+                  <a href="project-page-grm.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/green-n-olive.jpg" alt="green-n-olive">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>G&O legal advisori Website</h5>
+                    <p>FreeLance</p>
+                  </div>
+                  <a href="project-page-grm.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+            </div>
+          </div>
+          <div id="tabs-2">
+            <div class="projectgrid">
+              <div class="grid-card">
+                <img src="img/work-img/UI-Development-web.jpg" alt="UI-Development-web">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>MP Police registration portal</h5>
+                    <p>Company:Atishay LTD.</p>
+                  </div>
+                  <a href="#/">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/UI-Development3-web.jpg" alt="UI-Development-web">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>Zapurse Ticket booking and money transfer</h5>
+                    <p>Company:Atishay.LTD</p>
+                  </div>
+                  <a href="learningcenter.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/UI-Development2-web.jpg" alt="UI-Development-web">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>Treck Vec vehicle tracking products</h5>
+                    <p>Atishay.LTD</p>
+                  </div>
+                  <a href="learningcenter.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/maxodooapplication.jpg" alt="maxodooapplication">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>Maxidoo Hotel ERP application</h5>
+                    <p>Atishay.LTD</p>
+                  </div>
+                  <a href="learningcenter.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+              <div class="grid-card">
+                <img src="img/work-img/Bizben.jpg" alt="Bizben">
+                <aside>
+                  <div class="projects_projectgrid_grid-card_aside">
+                    <h5>Justdial Learning center</h5>
+                    <p>Company:Justdial.LTD</p>
+                  </div>
+                  <a href="learningcenter.html">
+                    Learn more
+                  </a>
+                </aside>
+              </div>
+            </div>
+          </div>
           <div id="tabs-3">
-            <aside>
-              click on image to zoom and than double click for close look
-            </aside>
             <div class="gallery">
-              <a href="img/work-img/GRM-1.jpg"><img src="img/work-img/GRM-1.jpg" title="HPE Greenlake Rapid cloud migration" alt=""/></a>
-              <a href="img/work-img/MAP-E-1.jpg"><img src="img/work-img/MAP-E-1.jpg" alt="" title="Monitering Analytics performance engine"/></a>
-              <a href="img/work-img/Innovtion-studio-m.jpg"><img src="img/work-img/Innovtion-studio-m.jpg" alt="" title="Innovation Studio mobile"/></a>
-              <a href="img/work-img/DOT-home.jpg"><img src="img/work-img/DOT-home.jpg" alt="" title="Data Orcastration Tool for data source connection"/></a>
-              <a href="img/work-img/Delta.jpg"><img src="img/work-img/Delta.jpg" alt="" title="Delta A knowledge managment center"/></a>
-              <a href="img/work-img/Bizben.jpg"><img src="img/work-img/Bizben.jpg" alt="" title="Bizben A Knowledge based website for Loan and mortgage."/></a>
-              <div class="clear"></div>
-            </div>
-          </div>
-          <div id="tabs-4">
-            <div class="row row-cols-1 row-cols-md-2 g-5">
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal1">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/justdialLC1.jpg" class="img-fluid card-img-top" alt="ui-design">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Just dial Learning center</h5>
-                    <p class="card-text">Just dial learning center was a in house product of Just dial for employee assessment only for mobile application
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>Ui design</li>
-                        <li>Cordination for development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Just dial learning center</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <div id="mod" class="owl-carousel owl-theme">
-                          <div class="item">
-                            <img src="img/work-img/justdialLC1.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/justdialLC2.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/UI-presentation.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <p>Justdial Learning center Mobile application is build to provide knowledge and information about just dial for employee increment and promotional activity which were in the form of Video,audio and PDF material main
-                        <ul>
-                          <li>Internal employee assessment</li>
-                          <li>Learning portal for employee</li>
-                          <li>Internal knowledge videos</li>
-                          <li>Gaming and points zone for employee</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal2">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/maxidoo.jpg" class="card-img-top" alt="...">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Maxidoo - Hotel Management ERP</h5>
-                    <p class="card-text">Maxidoo is one of the best HMS software that can efficiently coordinate activities such as supervising the subordinates, hiring and training, performance evaluation of employees, preparing the budget for front office department, and more.
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>Requirment gathering</li>
-                        <li>Road map</li>
-                        <li>Ui design</li>
-                        <li>Cordination for development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Maxidoo - Hotel Management ERP</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/maxidoo.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Maxidoo Hotel management app is built based on Maxidoo desktop application the app purpose is provide ease to user in term of room or table reservation and also to select food menu items in advace and also to make payment Maxidoo is andriod based application</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal3">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/zapurse.jpg" class="card-img-top" alt="...">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Zapurse - Digital Payment Platform</h5>
-                    <p class="card-text">Zapurse is a digital payments platform , offering a wide range of services Including Aadhar Enabled Payment System, Micro ATM, Domestic Money Transfer, Mobile recharges and DTH recharges.
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>Requirment gathering</li>
-                        <li>Road map</li>
-                        <li>Ui design</li>
-                        <li>Cordination for development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Zapurse</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/zapurse.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Zapurse ticket booking and Money tranfer mobile application
-                          is a digital payments platform , offering a wide range of services Including Aadhar Enabled Payment System, Micro ATM, Domestic Money Transfer, Mobile recharges and DTH recharges. Zapurse provides a one stop solution for retailers to serve customers with Adhar enabled payment system,Prepaid Mobile Recharge and DTH recharges. Recharges of all telecom and DTH operators are supported by Zapurse. It is a trusted brand that enables you toTransfer money Domestically and also provide Indo Nepal Money transfer facility too.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal4">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/esahyog.jpg" class="card-img-top" alt="...">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Esahyog</h5>
-                    <p class="card-text">Esahyog mobile an application is an MP goverment project developed by Atishay LTD its for local farmers and mandi retailers
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>Requirment gathering</li>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>Ui design</li>
-                        <li>Cordination for development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Esahyog</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/esahyog.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Esahyog mobile application for farmes and local vegetable mandi retailers
-                          was made to ease with the such user that can be easily understandable in terms of service provide by MP goverment to them
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal5">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/GRM-1.jpg" class="card-img-top" alt="...">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">HPE Greenlake Rapid Migration</h5>
-                    <p class="card-text">GRM is hpe product build for cloud based migration of VM Virtual machine which used to migrate projects in VM via cloud conectivity...
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>Requirment gathering</li>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>Ui design</li>
-                        <li>Cordination for development</li>
-                        <li>HTML static development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">GreenLake Rapid Migration</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <div id="mod2" class="owl-carousel owl-theme">
-                          <div class="item">
-                            <img src="img/work-img/GRM-1.jpg" class="img-fluid" alt="grm-1">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/GRM-2.jpg" class="img-fluid" alt="grm-2">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/GRM-3.jpg" class="img-fluid" alt="grm-3">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <p>GRM is hpe product build for cloud based migration of VM Virtual machine which used to migrate projects in VM via cloud conectivity it give abality to migrate project via cloud toi virtual machine and convert project capability to different os support it allow user based migration of project for many different user</p>
-                        <p class="my-4 w-100"><b>GRM user flow</b></p>
-                        <div>
-                          <img src="img/work-img/GL-WL-Workflow.jpg" height="500" alt="">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal6">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/MAP-E-login.jpg" class="card-img-top" alt="...">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Monitering Analytics performance engine</h5>
-                    <p class="card-text">As part of project, plan is to build a Middleware Monitoring Solution on alerts configuration and integrate the same with ticket management system for all the environments such as dev UAT, pre-production and production...
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>Requirment gathering</li>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>Ui design</li>
-                        <li>Cordination for development</li>
-                        <li>HTML static development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">MAP-E</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <div id="mod3" class="owl-carousel owl-theme">
-                          <div class="item">
-                            <img src="img/work-img/MAP-E-login.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/MAP-E-1.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/MAP-E-2.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <p>The objective of this POC is to develop and set up the Middleware Monitoring solution for targeted servers, App endpoints, Custom DB and Application metrics. The solution will also configure alerts and would be integrated with ticket management system for all environments such as dev UAT, pre-production and production.</p>
-                        <p><b>Business Case</b></p>
-                        <ul>
-                          <li>Currently the tasks such as disk utilization, CPU utilization, memory, server/application health checks are being checked manually which is a tedious job. To avoid this manual intervention monitoring solution is required which will provide 24/7 monitoring services of all servers and painful areas.</li>
-                          <li>Integrating the alert mechanism will trigger attention of the users if any unexpected system behaviour is happening in the environment</li>
-                          <li>Integrating with the ticketing tool would help the users to raise the auto ticket(s) if the resources reached its threshold values</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal7">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/DOT-home.jpg" class="card-img-top" alt="...">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Data Orcastration Tool</h5>
-                    <p class="card-text">DOT (Data orcastration tool) is HPE product which is used for data to be migrate in different server via DOT
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>Requirment gathering</li>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>Ui design</li>
-                        <li>Cordination for development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Data Orcastration Tool</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <div id="mod4" class="owl-carousel owl-theme">
-                          <div class="item">
-                            <img src="img/work-img/DOT-home.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/DOT.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/DOT-2.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <p>DOT (Data orcastration tool) is product for transfer or migrate data to different cloud server which has abilty of schedule of migration trigger alerts capturing data manage of data in via different user and certain alerts alerts and metric for data monitoring and also creating custome connection for data transfer</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal8">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/Delta.jpg" class="card-img-top" alt="...">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">knowledge managment center</h5>
-                    <p class="card-text">Its an HPE Web page for all internal information for all related HPE ongoing project server client information
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>Ui design</li>
-                        <li>Cordination for development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <img src="img/work-img/Delta.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Its an HPE Web page for all internal information for all related HPE ongoing project server client information it to be set in such way that need to display berief information in window it self no need to scroll or navigation for information</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal9">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/Innovtion-studio-m.jpg" class="card-img-top" alt="...">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Innovation Studio</h5>
-                    <p class="card-text">Inovation studio is web platform exist on HPE portal need mobile application as well is a portal which give information about ongoing cloud computing projects about HPE
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>Ui design for mobile</li>
-                        <li>Static HTML pages</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-lg">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Innovation Studio</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <div id="mod8" class="owl-carousel owl-theme">
-                          <div class="item">
-                            <img src="img/work-img/Innovtion-studio-m.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/Innovtion-studio-m-2.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/Innovtion-studio-m-3.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <p>Inovation studio is web platform exist on HPE portal need mobile application as well is a portal which give information about ongoing cloud computing projects about HPE</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#moda33">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/green-n-olive.jpg" class="card-img-top" alt="...">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Green & Olive Re-design</h5>
-                    <p class="card-text">Its an Freelance project for one of the client the website is for Legal Advisory services
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>Ui Re-design</li>
-                        <li>User flow</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="moda33" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <img src="img/work-img/green-n-olive-full.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Its an Freelance project for one of the client the website is for Legal Advisory services</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="tabs-5">
-            <div class="row row-cols-1 row-cols-md-2 g-5">
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#moda20">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/UI-Development2-web.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">TrackVec</h5>
-                    <p class="card-text">Its a website for user to buy vehicle tarcking devices as through this website atishay use to sell those desvice with collaberation of MP goverment our rol is to creat user-friendly website were user can bale to get all related details for products and find it easy to buy from our website
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>User flow</li>
-                        <li>Ui design</li>
-                        <li>Frontend development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="moda20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-xl-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Track vec website</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/UI-Development2-web.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>TrackVec website roll envolve 1.UX research 2.UI design 3.website frontend</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#moda21">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/UI-Development3-web.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Zapurse</h5>
-                    <p class="card-text">Zapurse is website for Money transfer and ticket booking for which atishay has develop desktop and mobile application its mad in such that can be used by local dealer for better reach to the user were desktop application is for retailer and Mobile application for users
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>UX research</li>
-                        <li>Road map</li>
-                        <li>User flow</li>
-                        <li>Ui design</li>
-                        <li>Frontend development for desktop application</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="moda21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-xl-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Zapurse Website</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/UI-Development3-web.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Zapurse website 1.Ux reaserch 2.UI Design 3.Frontend development</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#moda22">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/UI-Development-web.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">MP police registration portal</h5>
-                    <p class="card-text">Police ragistration portal is an desktop application is project by atishay ltd develop for MP police for their Police registration online portal to register detail of police staff new join all related details police of staff and to feed information for their police staff
-                    <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>UX research</li>
-                        <li>User flow</li>
-                        <li>Ui design</li>
-                        <li>Frontend development for desktop application</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="moda22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-xl-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Police registration portal</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/UI-Development-web.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Online portal for registration and feeding information</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#moda23">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/maxodooapplication.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Maxidoo ERP desktop application</h5>
-                    <p class="card-text">Maxidoo is one of the best HMS software that can efficiently coordinate activities such as supervising the subordinates, hiring and training, performance evaluation of employees, preparing the budget for front office department, and more.
-                    <p><b>Envolvement</b></p>
-                    <ul>
-                      <li>UX research</li>
-                      <li>User flow</li>
-                      <li>Ui design</li>
-                      <li>Frontend development for desktop application</li>
-                    </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="moda23" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-xl-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Maxidoo - Hotel Management ERP Desktop application</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <div id="mod9" class="owl-carousel owl-theme">
-                          <div class="item">
-                            <img src="img/work-img/maxodooapplication.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/maxodooapplication2.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/maxodooapplication3.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <p>Maxidoo Hotel Management Software is one of the best HMS software that can efficiently coordinate activities such as supervising the subordinates, hiring and training, performance evaluation of employees, preparing the budget for front office department, and more. Being a hotel billing software, Maxidoo Hotel Management Software allows multi-user access so that the authorised persons can access it from different locations to remain in sync with the daily business happenings. This hotel management software allows you to send Email or SMS to customers to nurture the potential business clientele and grow your business exponentially.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#moda24">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/Bizben.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Bizben</h5>
-                    <p class="card-text">Its a freelance contract based project. Bizben is Knowledge  based website for Loan and mortgage. for Us based client which was project by Kha creation time duration <b>1st Jun 2022 to 15th August 2022</b> months the challage is to develop user-friendly website
-                    which need to be better than certain website already in market such as "redfin"
-                      <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>UX research</li>
-                        <li>User flow</li>
-                        <li>Ui design</li>
-                        <li>Logo and branding</li>
-                        <li>Frontend development for desktop application</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="moda24" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-xl-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Bizben</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <div id="mod7" class="owl-carousel owl-theme">
-                          <div class="item">
-                            <img src="img/work-img/Bizben.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/Bizben-buyer.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/Bizben-listing.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/Bizben-dash.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <p>Bizben a Knowledge base wbsite for Loan and mortgage</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="tabs-6">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#moda25">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/Chepeysisinsta.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Chepeysis Intagram</h5>
-                    <p class="card-text">Chepeysis Is an IT solution service provider company used to provide Website and desktop and they need to branding and agency via digital market and such as instagram and social media so i worked as freelancer for they branding and graphic designing such as posts and banners for the website and application
-                      <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>market research</li>
-                        <li>Designing concept</li>
-                        <li>Logos nad branding</li>
-                        <li>Posts and banners</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="moda25" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Chephysis</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/Chepeysisinsta.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>instagram post</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal26">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/Chephysisbanner.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Chephysis facebook</h5>
-                    <p class="card-text">Chepeysis Is an IT solution service provider company used to provide Website and desktop and they need to branding and agency via digital market and such as instagram and social media so i worked as freelancer for they branding and graphic designing such as posts and banners for the website and application
-                      <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>market research</li>
-                        <li>Designing concept</li>
-                        <li>Logos nad branding</li>
-                        <li>Posts and banners</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal26" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Chepeysis</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/Chephysisbanner.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Facebook posts</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal27">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/graphic3.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Atishay social media banner</h5>
-                    <p class="card-text">Used to work on Atishay social media graphic content such as instagram facebook were used to design related to promotional activity for atishay internal product such as Maxidoo and Zapurse
-                      <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>brand research</li>
-                        <li>Designing concept</li>
-                        <li>Logos nad branding</li>
-                        <li>Posts and banners</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal27" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Atishay Post and banners</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/graphic3.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Atishay social media post and banners</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal28">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/graphic4.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Trackvec banner</h5>
-                    <p class="card-text">Trackvec socail media banner, logos and branding were used to design for tackvec social media for trackvec website and application
-                      <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>brand research</li>
-                        <li>Designing concept</li>
-                        <li>Logos nad branding</li>
-                        <li>Posts and banners</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal28" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">TrackVec banner</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/graphic4.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Trackvec social media banners</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal29">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/Oxypacking.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Oxy oil</h5>
-                    <p class="card-text">Oxy oil us based brand work as freelancer for client logos, product packaging cover, social-media graphic designing
-                      <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>brand research</li>
-                        <li>Designing concept</li>
-                        <li>Logos nad branding</li>
-                        <li>Posts and banners</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal29" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">OXY CBD</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/Oxypacking.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Product package</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal30">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/Wedding1.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Wedding card</h5>
-                    <p class="card-text">Freelance work for one client graphic designing of wedding cards for occasion of wedding the purpose to put this design for to show ability of designing with design tools on illustrator
-                      <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>Designing concept</li>
-                        <li>Wedding card design</li>
-                        <li>Digital invitation card</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal30" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Wedding cards</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <div id="mod5" class="owl-carousel owl-theme">
-                          <div class="item">
-                            <img src="img/work-img/Wedding1.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/Wedding2.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <p>Wedding card designing using illustrator and photoshop</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-main">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal31">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/Cdac-graphic.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">C-dac Post and Banners</h5>
-                    <p class="card-text">Work for C-dac as freelancer via consultancy for period of 2 months as to re-deign epramaan website and mobile seva application banners and sections also worked on their linkedin and facebook banner, webinar invitation banners
-                      <p><b>Envolvement</b></p>
-                      <ul>
-                        <li>UX research</li>
-                        <li>User flow</li>
-                        <li>Ui design</li>
-                        <li>Banners and logos</li>
-                        <li>HTML development</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal31" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">C-dac Banner and Logos</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body modslider">
-                        <div id="mod6" class="owl-carousel owl-theme">
-                          <div class="item">
-                            <img src="img/work-img/Cdac-graphic.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                          <div class="item">
-                            <img src="img/work-img/Cdac-2.jpg" class="img-fluid" alt="ui-design">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <p>Worked as freelance for their epramaan website re-design, Banners and Webinaar invitation
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card crd-blue">
-                  <a href="#/" data-bs-toggle="modal" data-bs-target="#modal32">
-                    <div class="pro-crd-img">
-                      <img src="img/work-img/HPE-MAP-E-logo.jpg" class="card-img-top" alt="trckvec">
-                    </div>
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">HPE MAP-E logo</h5>
-                    <p class="card-text">Logo designing and branding for HPE MAP-E monetering and performance analyser
-                      <p><b>Envolvement</b></p>
-                        <ul>
-                          <li>Market reaserach</li>
-                          <li>Branding concept</li>
-                          <li>Design concept</li>
-                          <li>Logo designing</li>
-                        </ul>
-                    </p>
-                  </div>
-                </div>
-                <div class="modal fade" id="modal32" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-fullscreen-lg-down modal-xl">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Monitering engine analyser and performance engine</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="img/work-img/HPE-MAP-E-logo.jpg" class="img-fluid" alt="ui-design">
-                      </div>
-                      <div class="modal-footer">
-                        <p>Logo designing for HPE product using illustrator</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <a href="img/work-img/Chepeysisinsta.jpg"><img src="img/work-img/Chepeysisinsta.jpg" title="Double click for close look"alt=""/></a>
+              <a href="img/work-img/Chephysisbanner.jpg"><img src="img/work-img/Chephysisbanner.jpg" title="Double click for close look" alt=""/></a>
+              <a href="img/work-img/graphic3.jpg"><img src="img/work-img/graphic3.jpg" title="Double click for close look" alt=""/></a>
+              <a href="img/work-img/graphic4.jpg"><img src="img/work-img/graphic4.jpg" title="Double click for close look" alt=""/></a>
+              <a href="img/work-img/Oxypacking.jpg"><img src="img/work-img/Oxypacking.jpg" title="Double click for close look" alt=""/></a>
+              <a href="img/work-img/Wedding1.jpg"><img src="img/work-img/Wedding1.jpg" title="Double click for close look" alt=""/></a>
+              <a href="img/work-img/Wedding2.jpg"><img src="img/work-img/Wedding2.jpg" title="Double click for close look" alt=""/></a>
+              <a href="img/work-img/Cdac-graphic.jpg"><img src="img/work-img/Cdac-graphic.jpg" title="Double click for close look" alt=""/></a>
+              <a href="img/work-img/Cdac-2.jpg"><img src="img/work-img/Cdac-2.jpg" title="Double click for close look" alt=""/></a>
+              <a href="img/work-img/HPE-MAP-E-logo.jpg"><img src="img/work-img/HPE-MAP-E-logo.jpg" title="Double click for close look" alt=""/></a>
             </div>
           </div>
         </div>
       </section>
     </div>
     <div id="contact" class="section-title">
-      <h3>Contact information</h3>
+      <h4>Contact information</h4>
     </div>
     <div class="mycontainer">
       <section class="contact">
@@ -1919,7 +1074,7 @@
           <img src="img/email.svg" width="60" alt="email">
           <h4>Email</h4>
           <address>
-            <a href="mailto:khwasi.87@gmail.com">Send Mail</a>
+            <a href="mailto:khwasi.87@gmail.com">SEND MAIL</a>
           </address>
         </div>
         <div>
@@ -1943,13 +1098,17 @@
             </ul> 
           </address>
         </div>
+        <div class="resumbtn">
+          <a href="files/Resume-Wasim-Khan.pdf" download="" style="text-decoration: none;">
+            <button id="download">DOWNLOAD RESUME</button>
+          </a>
+        </p>
       </section>
     </div>
-    <footer class="footer-title">
+    <div id="footer"></div>
+    <!-- <footer class="footer-title">
       &copy; <Span id="copyright-year"></Span> design and developed by wasim-khan
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
